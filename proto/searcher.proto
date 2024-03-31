@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option php_namespace = "Grpc\\Searcher";
+option php_metadata_namespace = "Grpc\\GPBMetadata";
+
+package search;
+
+service Search {
+    rpc hello (SearchRequest) returns (SearchResponse) {}
+}
+
+message SearchRequest {
+    string message = 1;
+}
+
+message SearchResponse {
+    string result = 1;
+}

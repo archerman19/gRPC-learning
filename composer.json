@@ -1,0 +1,12 @@
+{
+    "require": {
+        "spiral/roadrunner-cli": "^2.6",
+        "spiral/roadrunner-grpc": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Grpc\\": "generated/Grpc"
+        }
+    }
+}
